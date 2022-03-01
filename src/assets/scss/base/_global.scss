@@ -1,0 +1,40 @@
+body {
+	display: flex;
+	background-color: $neutral-1;
+	font-family: $ff-primary;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: em(16);
+	font-weight: $fw-400;
+	color: $primary-1;
+	line-height: em(20);
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	border: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+}
+
+[class^='icon-'] {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+
+.icon-ethereum {
+	width: em(11);
+	height: em(18);
+	background-image: url('~@/assets/images/icons/ethereum.svg');
+}
+
+.icon-clock {
+	width: em(16);
+	height: em(16);
+	background-image: url('~@/assets/images/icons/clock.svg');
+}

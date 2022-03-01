@@ -1,0 +1,10 @@
+#app,
+.wrapper {
+	display: flex;
+	flex: auto;
+	overflow: hidden;
+}
+
+.wrapper {
+	flex-direction: column;
+}
