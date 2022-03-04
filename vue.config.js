@@ -1,12 +1,8 @@
+const { ChakraLoaderPlugin } = require('chakra-loader');
+
 module.exports = {
-	css: {
-		loaderOptions: {
-			sass: {
-				additionalData: `
-					@import "@/assets/scss/_preload.scss";
-				`,
-			},
-		},
+	configureWebpack: {
+		plugins: [new ChakraLoaderPlugin()],
 	},
 	publicPath:
 		process.env.NODE_ENV === 'production'

@@ -1,13 +1,19 @@
 body {
 	display: flex;
-	background-color: $neutral-1;
-	font-family: $ff-primary;
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	font-size: em(16);
-	font-weight: $fw-400;
-	color: $primary-1;
-	line-height: em(20);
+	font-family: Spartan, sans-serif;
+	font-size: 15/16 +0rem;
+	font-weight: 400;
+	color: hsl(303, 10%, 53%);
+	line-height: 1.67;
+	background-image: url('~@/assets/images/bg-pattern-top.svg'), url('~@/assets/images/bg-pattern-bottom.svg');
+	background-repeat: no-repeat, no-repeat;
+	background-position: top left, bottom right;
+	background-size: 100%, auto 30%;
 }
 
 .sr-only {
@@ -21,20 +27,8 @@ body {
 	clip: rect(0, 0, 0, 0);
 }
 
-[class^='icon-'] {
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100%;
-}
-
-.icon-ethereum {
-	width: em(11);
-	height: em(18);
-	background-image: url('~@/assets/images/icons/ethereum.svg');
-}
-
-.icon-clock {
-	width: em(16);
-	height: em(16);
-	background-image: url('~@/assets/images/icons/clock.svg');
+@media screen and (min-width: 62em) {
+	body {
+		background-size: 36%, 73%;
+	}
 }

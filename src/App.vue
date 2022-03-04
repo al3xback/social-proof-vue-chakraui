@@ -1,20 +1,32 @@
 <template>
-	<div class="wrapper">
+	<c-theme-provider>
+		<c-reset />
+
 		<the-header></the-header>
-		aa
+		<the-main></the-main>
 		<the-footer></the-footer>
-	</div>
+	</c-theme-provider>
 </template>
 
 <script>
 import TheHeader from './components/layout/TheHeader.vue';
-// import TheMain from './components/layout/TheMain.vue';
+import TheMain from './components/layout/TheMain.vue';
 import TheFooter from './components/layout/TheFooter.vue';
 
 export default {
 	components: {
 		TheHeader,
-		TheFooter
+		TheMain,
+		TheFooter,
 	},
+	name: 'App',
 };
 </script>
+
+<style scoped>
+#__chakra-app {
+	display: flex;
+	flex-direction: column;
+	flex: auto;
+}
+</style>

@@ -1,5 +1,5 @@
 <template>
-	<header>
-		<h1 class="sr-only">Social Proof</h1>
-	</header>
+	<c-box as="header" class="header">
+		<c-heading as="h1" class="sr-only">NFT</c-heading>
+	</c-box>
 </template>

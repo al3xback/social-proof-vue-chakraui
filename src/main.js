@@ -1,9 +1,22 @@
-import { createApp } from 'vue';
-
 import './assets/scss/main.scss';
 
+import Vue from 'vue';
+
 import App from './App.vue';
+import Chakra from '@chakra-ui/vue';
+import { customIcons, customTheme } from './assets/js/custom-theme.js';
 
-const app = createApp(App);
+Vue.use(Chakra, {
+	extendTheme: customTheme,
+	icons: {
+		extend: {
+			...customIcons,
+		},
+	},
+});
 
-app.mount('#app');
+const app = new Vue({
+	render: (h) => h(App),
+});
+
+app.$mount('#app');

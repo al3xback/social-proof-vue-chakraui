@@ -1,31 +1,28 @@
 <template>
-	<footer>
-		<base-container>
-			<p>
-				Challenge by
-				<base-button
-					to="https://www.frontendmentor.io?ref=challenge"
-					target="_blank"
-					>Frontend Mentor</base-button
-				>
-				. Coded by
-				<base-button
-					to="https://github.com/al3xback"
-					rel="noopener"
-					target="_blank"
-					>al3xback</base-button
-				>.
-			</p>
-		</base-container>
-	</footer>
+	<c-box
+		as="footer"
+		flex="none"
+		px="6"
+		py="3"
+		fontSize="xxs"
+		fontWeight="medium"
+		textAlign="center">
+		<c-text>
+			Challenge by
+			<c-link
+				href="https://www.frontendmentor.io?ref=challenge"
+				is-external
+				color="magenta.400"
+				>Frontend Mentor</c-link
+			>
+			. Coded by
+			<c-link
+				href="https://github.com/al3xback"
+				is-external
+				color="magenta.400"
+				rel="noopener"
+				>al3xback</c-link
+			>.
+		</c-text>
+	</c-box>
 </template>
-
-<style scoped lang="scss">
-footer {
-	flex: none;
-	padding: em(12, 12) 0;
-	font-size: em(12);
-	font-weight: $fw-300;
-	text-align: center;
-}
-</style>
